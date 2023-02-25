@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/geometria?styles=17358"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"
+      rel="Stylesheet"
+      type="text/css"
+    />
+    <title>Mimino</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" data-header>
+      <div class="header-container container">
+        <!-- Open menu button -->
+        <div class="burger-thumb">
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu button"
+          >
+            <svg class="menu-icon">
+              <use
+                class="burger-icon js-open-menu"
+                href="./img/sprite.svg#burger"
+              ></use>
+              <use
+                class="x-close-icon js-close-menu"
+                href="./img/sprite.svg#x-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-link current" href="./index.html">HOME</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="">HOTEL</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="">RESTAURANT</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Logo -->
+        <a class="logo" href="./index.html"
+          ><span class="accent">MIMINO</span><br /><span
+            >RESTAURANT-HOTEL COMPLEX</span
+          ></a
+        >
+
+        <!-- Social media -->
+        <ul class="soc-media">
+          <li>
+            <a
+              class="soc-media-link"
+              href="https://www.instagram.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="soc-media-link"
+              href="https://www.facebook.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="soc-media-link"
+              class="soc-media-link"
+              href="https://twitter.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu -->
+        <div class="mob-menu container">
+          <!-- Navigation -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a class="nav-link" href="./index.html">HOME</a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="">HOTEL</a>
+              </li>
+
+              <li>
+                <a class="nav-link" href="">RESTAURANT</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Social media -->
+          <ul class="soc-media">
+            <li>
+              <a
+                class="soc-media-link"
+                href="https://www.instagram.com/"
+                rel="noopener noreferer nofollow"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg class="soc-media-icon">
+                  <use href="./img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="soc-media-link"
+                href="https://www.facebook.com/"
+                rel="noopener noreferer nofollow"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <svg class="soc-media-icon">
+                  <use href="./img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="soc-media-link"
+                href="https://twitter.com/"
+                rel="noopener noreferer nofollow"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <svg class="soc-media-icon">
+                  <use href="./img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main block -->
+    <main>
+      <!-- Hero -->
+      <section class="hero section">
+        <div class="container">
+          <div class="hero-bg-img"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Mimino</h1>
+            <ul class="main-btn-group">
+              <li>
+                <button class="main-btn" type="button" data-room-modal-open>
+                  book a room
+                </button>
+              </li>
+
+              <li>
+                <button class="main-btn" type="button" data-tabel-modal-open>
+                  book a table
+                </button>
+              </li>
+            </ul>
+
+            <ul class="hero-descr">
+              <li>
+                <p>
+                  Whether you're in the mood for a hearty breakfast, a light
+                  lunch, or <i>a romantic dinner</i>, our menu has something for
+                  everyone.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  At Hotel Mimino, <i>we believe</i> that great food should be
+                  available to everyone, no matter the time of day.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- About a complex -->
+      <section class="about section">
+        <div class="container">
+          <h2 class="section-title visually-hidden">About a complex</h2>
+
+          <ul>
+            <li>
+              <picture>
+                <!-- Tablet === Desktop screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 482px"
+                  srcset="
+                    ./img/home-page/about/webp/imag_tabl-desk.webp    1x,
+                    ./img/home-page/about/webp/imag_tabl-desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 482px"
+                  srcset="
+                    ./img/home-page/about/imag_tabl-desk.jpg    1x,
+                    ./img/home-page/about/imag_tabl-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/webp/imag_mob.webp    1x,
+                    ./img/home-page/about/webp/imag_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/imag_mob.jpg    1x,
+                    ./img/home-page/about/imag_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/about/imag_mob.jpg"
+                  alt="Living room with fireplace"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 439px"
+                  srcset="
+                    ./img/home-page/about/webp/image1_desk.webp    1x,
+                    ./img/home-page/about/webp/image1_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 439px"
+                  srcset="
+                    ./img/home-page/about/image1_desk.jpg    1x,
+                    ./img/home-page/about/image1_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 404px"
+                  srcset="
+                    ./img/home-page/about/webp/image1_tabl.webp    1x,
+                    ./img/home-page/about/webp/image1_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 404px"
+                  srcset="
+                    ./img/home-page/about/image1_tabl.jpg    1x,
+                    ./img/home-page/about/image1_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 282px, 100vw"
+                  srcset="
+                    ./img/home-page/about/webp/image1_mob.webp    1x,
+                    ./img/home-page/about/webp/image1_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 282px, 100vw"
+                  srcset="
+                    ./img/home-page/about/image1_mob.jpg    1x,
+                    ./img/home-page/about/image1_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/about/image1_mob.jpg"
+                  alt="Bathroom"
+                  loading="lazy"
+                />
+              </picture>
+
+              <h3 class="section-subtitle">restaurant-hotel complex</h3>
+              <p class="section-descr">
+                Indulge in a taste of luxury with every bite at Hotel Mimino.
+                From the freshest seafood to the most succulent steaks, every
+                dish is crafted with care to ensure that you enjoy a truly
+                memorable dining experience.
+              </p>
+              <p class="section-descr">
+                Treat yourself to a taste of the good life and come dine with us
+                today!
+              </p>
+
+              <div class="rating-mark">
+                Maria
+                <p>give rating <span>4.5</span></p>
+              </div>
+            </li>
+
+            <li>
+              <picture>
+                <!-- Tablet === Desktop screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 266px"
+                  srcset="
+                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk.webp    1x,
+                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 266px"
+                  srcset="
+                    ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk.jpg    1x,
+                    ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob.webp    1x,
+                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg    1x,
+                    ./img/home-page/about/unsplash_RFDP7_80v5A_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg"
+                  alt="Big hall wiht tables and chairs"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Tablet === Desktop screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 530px"
+                  srcset="
+                    ./img/home-page/about/webp/image_tabl-desk.webp    1x,
+                    ./img/home-page/about/webp/image_tabl-desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 530px"
+                  srcset="
+                    ./img/home-page/about/image_tabl-desk.jpg    1x,
+                    ./img/home-page/about/image_tabl-desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/webp/image_mob.webp    1x,
+                    ./img/home-page/about/webp/image_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 375px) 335px, 100vw"
+                  srcset="
+                    ./img/home-page/about/image_mob.jpg    1x,
+                    ./img/home-page/about/image_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/about/image_mob.jpg"
+                  alt="A table in a restaurant with glasses on it"
+                  loading="lazy"
+                />
+              </picture>
+
+              <h3 class="section-subtitle">business class hotel</h3>
+              <p class="section-descr">
+                The Mimino hotel features spacious and stylish double luxury
+                rooms with modern amenities for a comfortable stay.
+              </p>
+
+              <div class="rating-mark">
+                Alexander
+                <p>give rating <span>5.5</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Restaurant -->
+      <section class="restaurant section">
+        <div class="container">
+          <h2 class="section-title">restaurant</h2>
+          <p class="section-descr"></p>
+
+          <div class="slider">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image_desk.jpg    1x,
+                  ./img/home-page/restaurant/image_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image_mob.jpg    1x,
+                  ./img/home-page/restaurant/image_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image_mob.jpg"
+                alt="A glass with ice and strawberry"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture class="pic-desk-only">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image1_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image1_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image1_desk.jpg    1x,
+                  ./img/home-page/restaurant/image1_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image1_desk.jpg"
+                alt="Sandwich"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture class="pic-desk-only">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image3_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image3_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image3_desk.jpg    1x,
+                  ./img/home-page/restaurant/image3_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image3_desk.jpg"
+                alt="Glass and wine bottle on a table"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image2_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image2_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image2_desk.jpg    1x,
+                  ./img/home-page/restaurant/image2_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image2_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image2_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image2_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image2_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image2_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image2_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image2_mob.jpg    1x,
+                  ./img/home-page/restaurant/image2_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image2_mob.jpg"
+                alt="Chef is cooking"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture class="pic-desk-only">
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image6_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image6_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image6_desk.jpg    1x,
+                  ./img/home-page/restaurant/image6_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image6_desk.jpg"
+                alt="Fried piece of fish on the plate"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image4_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image4_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image4_desk.jpg    1x,
+                  ./img/home-page/restaurant/image4_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image4_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image4_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image4_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image4_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image4_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image4_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image4_mob.jpg    1x,
+                  ./img/home-page/restaurant/image4_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image4_mob.jpg"
+                alt="A plate of spaghetti and glasses of wine on the table"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image9_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image9_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image9_desk.jpg    1x,
+                  ./img/home-page/restaurant/image9_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image9_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image9_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image9_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image9_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image9_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image9_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image9_mob.jpg    1x,
+                  ./img/home-page/restaurant/image9_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image9_mob.jpg"
+                alt="A woman is enjoying a meal"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image5_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image5_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image5_desk.jpg    1x,
+                  ./img/home-page/restaurant/image5_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image5_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image5_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image5_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image5_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image5_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image5_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image5_mob.jpg    1x,
+                  ./img/home-page/restaurant/image5_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image5_mob.jpg"
+                alt="Rice cutlet with shrimp on top"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image7_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image7_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image7_desk.jpg    1x,
+                  ./img/home-page/restaurant/image7_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image7_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image7_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image7_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image7_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image7_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image7_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image7_mob.jpg    1x,
+                  ./img/home-page/restaurant/image7_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image7_mob.jpg"
+                alt="A glass of whiskey with ice and olives"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image8_desk.webp    1x,
+                  ./img/home-page/restaurant/webp/image8_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                sizes="(min-width: 1440px) 266px"
+                srcset="
+                  ./img/home-page/restaurant/image8_desk.jpg    1x,
+                  ./img/home-page/restaurant/image8_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/webp/image8_tabl.webp    1x,
+                  ./img/home-page/restaurant/webp/image8_tabl@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 336px"
+                srcset="
+                  ./img/home-page/restaurant/image8_tabl.jpg    1x,
+                  ./img/home-page/restaurant/image8_tabl@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/webp/image8_mob.webp    1x,
+                  ./img/home-page/restaurant/webp/image8_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                sizes="(min-width: 375px) 157px, 100vw"
+                srcset="
+                  ./img/home-page/restaurant/image8_mob.jpg    1x,
+                  ./img/home-page/restaurant/image8_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/restaurant/image8_mob.jpg"
+                alt="Asparagus in sauce with greens"
+                loading="lazy"
+              />
+            </picture>
+
+            <ul class="slider-btns">
+              <li>
+                <button type="slider-btn">
+                  <svg class="slider-left" width="36" height="36">
+                    <use href="./img/sprite.svg#chevron-left"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button type="slider-btn">
+                  <svg class="slider-rigth" width="36" height="36">
+                    <use href="./img/sprite.svg#chevron-right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="main-btn-group">
+            <li>
+              <button class="main-btn" type="button" data-tabel-modal-open>
+                book a table
+              </button>
+            </li>
+            <li>
+              <a href="./restaurant-page.html" class="main-btn"
+                >View the menu</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Welcome -->
+      <section class="welcome section">
+        <div class="container">
+          <h2 class="section-title">
+            Welcome to the epitome of <i>luxury</i> and <i>comfort</i>
+          </h2>
+          <div class="section-descr">
+            <p>
+              Our hotel rooms are elegantly designed with an eye for detail,
+              ensuring that you have everything you need for a relaxing and
+              rejuvenating stay.
+            </p>
+            <p>
+              Each room is equipped with the latest amenities, including plush
+              bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to
+              help you start your day right. Our spacious bathrooms feature
+              luxurious toiletries and towels, so you can pamper yourself in
+              complete privacy.
+            </p>
+          </div>
+
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 672px"
+              srcset="
+                ./img/home-page/welcome/image_desk.webp    1x,
+                ./img/home-page/welcome/image_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 672px"
+              srcset="
+                ./img/home-page/welcome/image_desk.jpg    1x,
+                ./img/home-page/welcome/image_desk@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 704px"
+              srcset="
+                ./img/home-page/welcome/image_tabl.webp    1x,
+                ./img/home-page/welcome/image_tabl@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 704px"
+              srcset="
+                ./img/home-page/welcome/image_tabl.jpg    1x,
+                ./img/home-page/welcome/image_tabl@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              sizes="(min-width: 375px) 335px, 100vw"
+              srcset="
+                ./img/home-page/welcome/image_mob.webp    1x,
+                ./img/home-page/welcome/image_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              sizes="(min-width: 375px) 335px, 100vw"
+              srcset="
+                ./img/home-page/welcome/image_mob.jpg    1x,
+                ./img/home-page/welcome/image_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+
+            <img
+              src="./img/home-page/welcome/image_mob.jpg"
+              alt="Spacious hall with large windows"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Hotel -->
+      <section class="hotel section">
+        <div class="container">
+          <h2 class="section-title">Hotel</h2>
+          <p class="section-descr">
+            Book your stay with us now and experience the epitome of comfort and
+            luxury at our hotel. We guarantee you'll be thrilled with your
+            decision.
+          </p>
+
+          <ul class="hotel-img-list">
+            <li>
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image_desk.webp    1x,
+                    ./img/home-page/hotel/webp/image_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/image_desk.jpg    1x,
+                    ./img/home-page/hotel/image_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image_tabl.webp    1x,
+                    ./img/home-page/hotel/webp/image_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/image_tabl.jpg    1x,
+                    ./img/home-page/hotel/image_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image_tabl.jpg"
+                  alt="Two cans of liquid soap and towels"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image2_desk.webp    1x,
+                    ./img/home-page/hotel/webp/image2_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/image2_desk.jpg    1x,
+                    ./img/home-page/hotel/image2_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image2_tabl.webp    1x,
+                    ./img/home-page/hotel/webp/image2_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/image2_tabl.jpg    1x,
+                    ./img/home-page/hotel/image2_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image2_tabl.jpg"
+                  alt="Bathroom"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 420px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image4_desk.webp    1x,
+                    ./img/home-page/hotel/webp/image4_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 420px"
+                  srcset="
+                    ./img/home-page/hotel/image4_desk.jpg    1x,
+                    ./img/home-page/hotel/image4_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image4_tabl.webp    1x,
+                    ./img/home-page/hotel/webp/image4_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/image4_tabl.jpg    1x,
+                    ./img/home-page/hotel/image4_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image4_tabl.jpg"
+                  alt="Badroom"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image3_desk.webp    1x,
+                    ./img/home-page/hotel/webp/image3_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/image3_desk.jpg    1x,
+                    ./img/home-page/hotel/image3_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image3_tabl.webp    1x,
+                    ./img/home-page/hotel/webp/image3_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/image3_tabl.jpg    1x,
+                    ./img/home-page/hotel/image3_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image3_tabl.jpg"
+                  alt="Sinks in the bathroom"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image1_desk.webp    1x,
+                    ./img/home-page/hotel/webp/image1_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 320px"
+                  srcset="
+                    ./img/home-page/hotel/image1_desk.jpg    1x,
+                    ./img/home-page/hotel/image1_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/webp/image1_tabl.webp    1x,
+                    ./img/home-page/hotel/webp/image1_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 176px"
+                  srcset="
+                    ./img/home-page/hotel/image1_tabl.jpg    1x,
+                    ./img/home-page/hotel/image1_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image1_tabl.jpg"
+                  alt="Cream in front of the mirror"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="hotel-mob-img">
+            <picture>
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767.99px)"
+                sizes="(min-width: 375px) 335px, 100vw"
+                srcset="
+                  ./img/home-page/hotel/webp/image4_mob.webp    1x,
+                  ./img/home-page/hotel/webp/image4_mob@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767.99px)"
+                sizes="(min-width: 375px) 335px, 100vw"
+                srcset="
+                  ./img/home-page/hotel/image4_mob.jpg    1x,
+                  ./img/home-page/hotel/image4_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./img/home-page/hotel/image4_mob.jpg"
+                alt="Badroom"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="hotel-slider">
+              <picture>
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/webp/image_mob.webp    1x,
+                    ./img/home-page/hotel/webp/image_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/image_mob.jpg    1x,
+                    ./img/home-page/hotel/image_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image_mob.jpg"
+                  alt="Two cans of liquid soap and towels"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/webp/image2_mob.webp    1x,
+                    ./img/home-page/hotel/webp/image2_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/image2_mob.jpg    1x,
+                    ./img/home-page/hotel/image2_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image2_mob.jpg"
+                  alt="Bathroom"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/webp/image3_mob.webp    1x,
+                    ./img/home-page/hotel/webp/image3_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/image3_mob.jpg    1x,
+                    ./img/home-page/hotel/image3_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image3_mob.jpg"
+                  alt="Sinks in the bathroom"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/webp/image1_mob.webp    1x,
+                    ./img/home-page/hotel/webp/image1_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767.99px)"
+                  sizes="(min-width: 375px) 157px, 100vw"
+                  srcset="
+                    ./img/home-page/hotel/image1_mob.jpg    1x,
+                    ./img/home-page/hotel/image1_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/home-page/hotel/image1_mob.jpg"
+                  alt="Cream in front of the mirror"
+                  loading="lazy"
+                />
+              </picture>
+
+              <ul class="slider-btns">
+                <li>
+                  <button type="slider-btn">
+                    <svg class="slider-left" width="36" height="36">
+                      <use href="./img/sprite.svg#chevron-left"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button type="slider-btn">
+                    <svg class="slider-rigth" width="36" height="36">
+                      <use href="./img/sprite.svg#chevron-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="main-btn-group">
+            <li>
+              <button class="main-btn" type="button" data-room-modal-open>
+                book a room
+              </button>
+            </li>
+            <li>
+              <a href="./hotel-page.html" class="main-btn">View rooms</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="location section">
+        <div class="container">
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 640px"
+              srcset="
+                ./img/home-page/location/map_desk.webp    1x,
+                ./img/home-page/location/map_desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1440px)"
+              sizes="(min-width: 1440px) 640px"
+              srcset="
+                ./img/home-page/location/map_desk.jpg    1x,
+                ./img/home-page/location/map_desk@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 704px"
+              srcset="
+                ./img/home-page/location/map_tabl.webp    1x,
+                ./img/home-page/location/map_tabl@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 704px"
+              srcset="
+                ./img/home-page/location/map_tabl.jpg    1x,
+                ./img/home-page/location/map_tabl@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              sizes="(min-width: 375px) 335px, 100vw"
+              srcset="
+                ./img/home-page/location/map_mob.webp    1x,
+                ./img/home-page/location/map_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              sizes="(min-width: 375px) 335px, 100vw"
+              srcset="
+                ./img/home-page/location/map_mob.jpg    1x,
+                ./img/home-page/location/map_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+
+            <img
+              src="./img/home-page/location/map_mob.jpg"
+              alt="Spacious hall with large windows"
+              loading="lazy"
+            />
+          </picture>
+
+          <h2 class="section-title">location</h2>
+
+          <address>
+            <ul>
+              <li>Ukraine, Poltava, St. Marshal Biryuzov, 15</li>
+              <li>
+                <span>call us:</span>
+                <div>
+                  <a href="tel:+380955559533">(095) 555 95 33</a>
+                  <a href="tel:+380668491089">(066) 849 10 89</a>
+                </div>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul>
+            <li>
+              <a class="nav-link" href="./index.html">HOME</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="">HOTEL</a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="">RESTAURANT</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Logo -->
+        <a href="./index.html">MIMINO <span>RESTAURANT-HOTEL COMPLEX</span></a>
+
+        <!-- Social media -->
+        <ul class="soc-media">
+          <li>
+            <a
+              class="soc-media-link"
+              href="https://www.instagram.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="soc-media-link"
+              href="https://www.facebook.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="soc-media-link"
+              href="https://twitter.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          class="close-btn"
+          type="button"
+          aria-label="Close modal button"
+          data-modal-close
+        >
+          <svg class="cross-icon" width="28" height="28">
+            <use href="./img/sprite.svg#x-close"></use>
+          </svg>
+        </button>
+
+        <!-- Book a table/Book a room -->
+        <div class="book">
+          <h2 class="modal-title table">BOOK A TABLE</h2>
+          <h2 class="modal-title room">BOOK A ROOM</h2>
+          <form class="modal-form" name="modal_form">
+            <label class="modal-label">
+              <input class="modal-inp" type="text" placeholder="Your name" />
+              <span class="inp-title">Who should book a table for?</span>
+            </label>
+
+            <select
+              class="modal-label table"
+              name="number of people"
+              placeholder="number of people"
+            >
+              <option value="" selected hidden>number of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+
+            <label class="modal-label">
+              <input
+                class="modal-inp"
+                id="from-date"
+                type="text"
+                value="Today"
+              />
+              <span class="inp-title table">What date to book?</span>
+              <span class="inp-title room">Check-in date</span>
+            </label>
+
+            <label class="modal-label room">
+              <input class="modal-inp" id="to-date" type="text" />
+              <span class="inp-title">Check-out date</span>
+            </label>
+
+            <select class="modal-label room" name="number category">
+              <option value="ds" selected>double suite</option>
+              <option value="tr">triple room</option>
+              <option value="fsr">four-seater room</option>
+            </select>
+
+            <label class="modal-label">
+              <input
+                class="modal-inp"
+                type="text"
+                id="telInput"
+                placeholder="+ 38 ()"
+                autocomplete="off"
+              />
+              <span class="inp-title">Phone number</span>
+            </label>
+          </form>
+        </div>
+
+        <!-- Price per room -->
+        <div class="price">
+          <h2 class="modal-title">Prices per room</h2>
+          <h3 class="modal-subtitle">Double suite</h3>
+          <form class="modal-form" name="modal_form">
+            <label class="modal-label">
+              <select id="nightsSelect" name="number of nights">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+              <span class="inp-title">Number of nights</span>
+            </label>
+
+            <label class="modal-label">
+              <input class="modal-inp" id="check-date" type="text" />
+              <span class="inp-title">Check-in date</span>
+            </label>
+
+            <label for="" class="modal-label">
+              <input
+                id="price"
+                type="text"
+                class="modal-inp"
+                value="1000"
+                disabled
+              />
+              <span class="inp-title">UAH</span>
+            </label>
+
+            <!-- Modal button -->
+            <button class="modal-btn main-btn" type="submit">
+              make a reservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.7.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"
+    ></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/telMask.js"></script>
+    <script src="./js/priceChange.js"></script>
+  </body>
+</html>
