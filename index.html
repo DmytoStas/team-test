@@ -243,9 +243,9 @@
         <div class="container">
           <h2 class="section-title visually-hidden">About a complex</h2>
 
-          <ul>
-            <li>
-              <picture>
+          <ul class="about-list">
+            <li class="item">
+              <picture class="first-picture">
                 <!-- Tablet === Desktop screen -->
                 <source
                   media="(min-width: 768px)"
@@ -292,7 +292,7 @@
                 />
               </picture>
 
-              <picture>
+              <picture class="second-picture">
                 <!-- Desktop screen -->
                 <source
                   media="(min-width: 1440px)"
@@ -350,81 +350,34 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/about/image1_mob.jpg"
                   alt="Bathroom"
                   loading="lazy"
                 />
               </picture>
+              <div class="item-descr-block">
+                <h3 class="section-subtitle">restaurant-hotel complex</h3>
+                <p class="section-descr about-deskr-firs-parag">
+                  Indulge in a taste of luxury with every bite at Hotel Mimino.
+                  From the freshest seafood to the most succulent steaks, every
+                  dish is crafted with care to ensure that you enjoy a truly
+                  memorable dining experience.
+                </p>
+                <p class="section-descr">
+                  Treat yourself to a taste of the good life and come dine with
+                  us today!
+                </p>
+              </div>
 
-              <h3 class="section-subtitle">restaurant-hotel complex</h3>
-              <p class="section-descr">
-                Indulge in a taste of luxury with every bite at Hotel Mimino.
-                From the freshest seafood to the most succulent steaks, every
-                dish is crafted with care to ensure that you enjoy a truly
-                memorable dining experience.
-              </p>
-              <p class="section-descr">
-                Treat yourself to a taste of the good life and come dine with us
-                today!
-              </p>
-
-              <div class="rating-mark">
-                Maria
-                <p>give rating <span>4.5</span></p>
+              <div class="rating-mark-block mar">
+                <span class="rating-mark">Maria</span>
+                <p>give rating <span class="rating-mark">4.5</span></p>
               </div>
             </li>
 
-            <li>
-              <picture>
-                <!-- Tablet === Desktop screen -->
-                <source
-                  media="(min-width: 768px)"
-                  sizes="(min-width: 768px) 266px"
-                  srcset="
-                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk.webp    1x,
-                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  sizes="(min-width: 768px) 266px"
-                  srcset="
-                    ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk.jpg    1x,
-                    ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-                <!-- Mobile screen -->
-                <source
-                  media="(max-width: 767px)"
-                  sizes="(min-width: 375px) 335px, 100vw"
-                  srcset="
-                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob.webp    1x,
-                    ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767px)"
-                  sizes="(min-width: 375px) 335px, 100vw"
-                  srcset="
-                    ./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg    1x,
-                    ./img/home-page/about/unsplash_RFDP7_80v5A_mob@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-
-                <img
-                  src="./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg"
-                  alt="Big hall wiht tables and chairs"
-                  loading="lazy"
-                />
-              </picture>
-
-              <picture>
+            <li class="item">
+              <picture class="first-picture">
                 <!-- Tablet === Desktop screen -->
                 <source
                   media="(min-width: 768px)"
@@ -471,15 +424,65 @@
                 />
               </picture>
 
-              <h3 class="section-subtitle">business class hotel</h3>
-              <p class="section-descr">
-                The Mimino hotel features spacious and stylish double luxury
-                rooms with modern amenities for a comfortable stay.
-              </p>
+              <div>
+                <picture class="second-picture">
+                  <!-- Tablet === Desktop screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 266px"
+                    srcset="
+                      ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk.webp    1x,
+                      ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    sizes="(min-width: 768px) 266px"
+                    srcset="
+                      ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk.jpg    1x,
+                      ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 375px) 335px, 100vw"
+                    srcset="
+                      ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob.webp    1x,
+                      ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 375px) 335px, 100vw"
+                    srcset="
+                      ./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg    1x,
+                      ./img/home-page/about/unsplash_RFDP7_80v5A_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg"
+                    alt="Big hall wiht tables and chairs"
+                    loading="lazy"
+                  />
+                </picture>
 
-              <div class="rating-mark">
-                Alexander
-                <p>give rating <span>5.5</span></p>
+                <div class="item-descr-block">
+                  <h3 class="section-subtitle">business class hotel</h3>
+                  <p class="section-descr">
+                    The Mimino hotel features spacious and stylish double luxury
+                    rooms with modern amenities for a comfortable stay.
+                  </p>
+                </div>
+
+                <div class="rating-mark-block al">
+                  <span class="rating-mark">Alexander</span>
+                  <p>give rating <span class="rating-mark">5.5</span></p>
+                </div>
               </div>
             </li>
           </ul>
