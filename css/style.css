@@ -79,6 +79,7 @@ img {
 
 picture {
   font-size: 0;
+  display: block;
 }
 
 ul {
@@ -726,9 +727,6 @@ button {
   | About
   |============================
 */
-.about .section-descr {
-  margin-bottom: 0;
-}
 .about-list {
   display: flex;
   flex-flow: column;
@@ -771,7 +769,7 @@ button {
   }
 }
 
-.about .about-deskr-firs-parag {
+.about .section-descr p:first-child {
   margin-bottom: 14px;
 }
 
@@ -1023,11 +1021,9 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
-  .restaurant .container {
+  .restaurant-container {
     position: relative;
-  }
 
-  .restaurant .container {
     padding-right: 0;
   }
 
@@ -1036,7 +1032,7 @@ button {
     padding-bottom: 26px;
   }
 
-  .text-content {
+  .restaurant .text-content {
     margin-bottom: 125px;
   }
 
@@ -1049,5 +1045,78 @@ button {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+/**
+  |============================
+  | Welcome
+  |============================
+*/
+.welcome .section-title {
+  color: var(--second-dark-txt-cl);
+  font-size: 32px;
+  line-height: 1.12;
+}
+@media screen and (min-width: 768px) {
+  .welcome .section-title {
+    width: 434px;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .welcome .text-content {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.welcome .section-descr {
+  color: var(--second-dark-txt-cl);
+  font-weight: 400;
+}
+
+.welcome p:nth-child(1) {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .welcome .section-descr {
+    display: flex;
+    gap: 32px;
+  }
+
+  .welcome p:nth-child(1) {
+    width: 306px;
+    margin-bottom: 0;
+  }
+
+  .welcome p:nth-child(2) {
+    width: 366px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-container {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .welcome .text-content {
+    display: flex;
+    flex-flow: column;
+    max-width: 434px;
+    margin-bottom: 0;
+  }
+
+  .welcome .section-title {
+    margin-bottom: auto;
+  }
+
+  .welcome p:nth-child(1) {
+    margin-bottom: 24px;
   }
 }
