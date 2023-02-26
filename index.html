@@ -198,10 +198,12 @@
         <div class="bg-img-container container">
           <div class="hero-bg-img"></div>
         </div>
+
         <div class="section">
           <div class="container">
             <div class="hero-content">
               <h1 class="hero-title">Mimino</h1>
+
               <div class="hero-content-lists">
                 <ul class="main-btn-group">
                   <li>
@@ -219,6 +221,7 @@
                     </button>
                   </li>
                 </ul>
+
                 <ul class="hero-descr">
                   <li class="item">
                     <p>
@@ -1536,81 +1539,118 @@
 
       <!-- Location -->
       <section class="location section">
-        <div class="container">
-          <picture>
-            <!-- Desktop screen -->
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                ./img/home-page/location/map_desk.webp    1x,
-                ./img/home-page/location/map_desk@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                ./img/home-page/location/map_desk.jpg    1x,
-                ./img/home-page/location/map_desk@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <!-- Tablet screen -->
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/home-page/location/map_tabl.webp    1x,
-                ./img/home-page/location/map_tabl@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/home-page/location/map_tabl.jpg    1x,
-                ./img/home-page/location/map_tabl@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
-            <!-- Mobile screen -->
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/home-page/location/map_mob.webp    1x,
-                ./img/home-page/location/map_mob@2x.webp 2x
-              "
-              type="image/webp"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./img/home-page/location/map_mob.jpg    1x,
-                ./img/home-page/location/map_mob@2x.jpg 2x
-              "
-              type="image/jpg"
-            />
+        <div class="location-container container">
+          <!-- Img >= 1440px -->
+          <div class="img-desk-only">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/home-page/location/map_desk.webp    1x,
+                  ./img/home-page/location/map_desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/home-page/location/map_desk.jpg    1x,
+                  ./img/home-page/location/map_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
 
-            <img
-              src="./img/home-page/location/map_mob.jpg"
-              alt="Spacious hall with large windows"
-              loading="lazy"
-            />
-          </picture>
+              <img
+                src="./img/home-page/location/map_desk.jpg"
+                alt="Spacious hall with large windows"
+                loading="lazy"
+              />
+            </picture>
 
-          <h2 class="section-title">location</h2>
+            <svg class="map-pointer">
+              <use href="./img/sprite.svg#mapPointer"></use>
+            </svg>
+          </div>
 
-          <address>
-            <ul>
-              <li>Ukraine, Poltava, St. Marshal Biryuzov, 15</li>
-              <li>
-                <span>call us:</span>
-                <div>
-                  <a href="tel:+380955559533">(095) 555 95 33</a>
-                  <a href="tel:+380668491089">(066) 849 10 89</a>
-                </div>
-              </li>
-            </ul>
-          </address>
+          <div class="location-content">
+            <h2 class="section-title">location</h2>
+
+            <!-- Img < 1440px -->
+            <div class="img-mob-tabl">
+              <picture>
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/home-page/location/map_tabl.webp    1x,
+                    ./img/home-page/location/map_tabl@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/home-page/location/map_tabl.jpg    1x,
+                    ./img/home-page/location/map_tabl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/home-page/location/map_mob.webp    1x,
+                    ./img/home-page/location/map_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/home-page/location/map_mob.jpg    1x,
+                    ./img/home-page/location/map_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./img/home-page/location/map_mob.jpg"
+                  alt="Map"
+                  loading="lazy"
+                />
+              </picture>
+
+              <svg class="map-pointer">
+                <use href="./img/sprite.svg#mapPointer"></use>
+              </svg>
+            </div>
+
+            <address class="location-address">
+              <ul class="address-list">
+                <li class="item">
+                  <a
+                    class="address-link"
+                    href="https://goo.gl/maps/Xg4dJTGUKwe6vswH9"
+                    rel="noopener noreferer nofollow"
+                    target="_blank"
+                    >Ukraine, Poltava, <br />St. Marshal Biryuzov, 15</a
+                  >
+                </li>
+
+                <li class="item tel">
+                  <span>call us:</span>
+                  <div class="tel-block">
+                    <a class="tel-link" href="tel:+380955559533"
+                      >(095) 555 95 33</a
+                    >
+                    <a class="tel-link" href="tel:+380668491089"
+                      >(066) 849 10 89</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
       </section>
     </main>
