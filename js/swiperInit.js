@@ -1,7 +1,7 @@
-const swiper = new Swiper('.swiper', {
+const swiperRest = new Swiper('.restaurant-swiper', {
   uniqueNavElements: true,
   setWrapperSize: true,
-  speed: 250,
+  speed: 300,
   spaceBetween: 20,
   slidesPerView: 2,
   breakpoints: {
@@ -14,6 +14,19 @@ const swiper = new Swiper('.swiper', {
       grabCursor: true,
     },
   },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-btn-next',
+    prevEl: '.slider-btn-prev',
+  },
+});
+
+const swiper = new Swiper('.hotel-swiper', {
+  uniqueNavElements: true,
+  setWrapperSize: true,
+  speed: 300,
+  spaceBetween: 20,
+  slidesPerView: 2,
   // Navigation arrows
   navigation: {
     nextEl: '.slider-btn-next',

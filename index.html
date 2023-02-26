@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -486,548 +486,547 @@
             </p>
           </div>
 
-          <div class="slider">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image_desk.jpg    1x,
-                        ./img/home-page/restaurant/image_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image_mob.jpg    1x,
-                        ./img/home-page/restaurant/image_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
+          <!-- Slider main container -->
+          <div class="restaurant-swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image_desk.jpg    1x,
+                      ./img/home-page/restaurant/image_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image_mob.jpg    1x,
+                      ./img/home-page/restaurant/image_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
 
-                    <img
-                      src="./img/home-page/restaurant/image_mob.jpg"
-                      alt="A glass with ice and strawberry"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide pic-desk-only">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image1_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image1_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image1_desk.jpg    1x,
-                        ./img/home-page/restaurant/image1_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image1_desk.jpg"
-                      alt="Sandwich"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide pic-desk-only">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image3_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image3_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image3_desk.jpg    1x,
-                        ./img/home-page/restaurant/image3_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image3_desk.jpg"
-                      alt="Glass and wine bottle on a table"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image2_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image2_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image2_desk.jpg    1x,
-                        ./img/home-page/restaurant/image2_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image2_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image2_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image2_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image2_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image2_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image2_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image2_mob.jpg    1x,
-                        ./img/home-page/restaurant/image2_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image2_mob.jpg"
-                      alt="Chef is cooking"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide pic-desk-only">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image6_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image6_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image6_desk.jpg    1x,
-                        ./img/home-page/restaurant/image6_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image6_desk.jpg"
-                      alt="Fried piece of fish on the plate"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image4_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image4_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image4_desk.jpg    1x,
-                        ./img/home-page/restaurant/image4_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image4_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image4_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image4_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image4_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image4_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image4_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image4_mob.jpg    1x,
-                        ./img/home-page/restaurant/image4_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image4_mob.jpg"
-                      alt="A plate of spaghetti and glasses of wine on the table"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image9_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image9_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image9_desk.jpg    1x,
-                        ./img/home-page/restaurant/image9_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image9_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image9_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image9_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image9_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image9_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image9_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image9_mob.jpg    1x,
-                        ./img/home-page/restaurant/image9_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image9_mob.jpg"
-                      alt="A woman is enjoying a meal"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image5_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image5_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image5_desk.jpg    1x,
-                        ./img/home-page/restaurant/image5_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image5_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image5_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image5_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image5_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image5_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image5_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image5_mob.jpg    1x,
-                        ./img/home-page/restaurant/image5_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image5_mob.jpg"
-                      alt="Rice cutlet with shrimp on top"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image7_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image7_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image7_desk.jpg    1x,
-                        ./img/home-page/restaurant/image7_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image7_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image7_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image7_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image7_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image7_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image7_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image7_mob.jpg    1x,
-                        ./img/home-page/restaurant/image7_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image7_mob.jpg"
-                      alt="A glass of whiskey with ice and olives"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <!-- Desktop screen -->
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image8_desk.webp    1x,
-                        ./img/home-page/restaurant/webp/image8_desk@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 1440px)"
-                      srcset="
-                        ./img/home-page/restaurant/image8_desk.jpg    1x,
-                        ./img/home-page/restaurant/image8_desk@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Tablet screen -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image8_tabl.webp    1x,
-                        ./img/home-page/restaurant/webp/image8_tabl@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/home-page/restaurant/image8_tabl.jpg    1x,
-                        ./img/home-page/restaurant/image8_tabl@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <!-- Mobile screen -->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/webp/image8_mob.webp    1x,
-                        ./img/home-page/restaurant/webp/image8_mob@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./img/home-page/restaurant/image8_mob.jpg    1x,
-                        ./img/home-page/restaurant/image8_mob@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <img
-                      src="./img/home-page/restaurant/image8_mob.jpg"
-                      alt="Asparagus in sauce with greens"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
+                  <img
+                    src="./img/home-page/restaurant/image_mob.jpg"
+                    alt="A glass with ice and strawberry"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
 
-              <ul class="slider-btns">
-                <li>
-                  <button class="slider-btn slider-btn-prev" type="button">
-                    <svg class="slider-icon">
-                      <use href="./img/sprite.svg#chevron-left"></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="slider-btn slider-btn-next" type="button">
-                    <svg class="slider-icon">
-                      <use href="./img/sprite.svg#chevron-right"></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
+              <div class="swiper-slide pic-desk-only">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image1_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image1_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image1_desk.jpg    1x,
+                      ./img/home-page/restaurant/image1_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image1_desk.jpg"
+                    alt="Sandwich"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide pic-desk-only">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image3_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image3_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image3_desk.jpg    1x,
+                      ./img/home-page/restaurant/image3_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image3_desk.jpg"
+                    alt="Glass and wine bottle on a table"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image2_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image2_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image2_desk.jpg    1x,
+                      ./img/home-page/restaurant/image2_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image2_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image2_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image2_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image2_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image2_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image2_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image2_mob.jpg    1x,
+                      ./img/home-page/restaurant/image2_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image2_mob.jpg"
+                    alt="Chef is cooking"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide pic-desk-only">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image6_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image6_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image6_desk.jpg    1x,
+                      ./img/home-page/restaurant/image6_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image6_desk.jpg"
+                    alt="Fried piece of fish on the plate"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image4_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image4_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image4_desk.jpg    1x,
+                      ./img/home-page/restaurant/image4_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image4_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image4_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image4_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image4_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image4_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image4_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image4_mob.jpg    1x,
+                      ./img/home-page/restaurant/image4_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image4_mob.jpg"
+                    alt="A plate of spaghetti and glasses of wine on the table"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image9_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image9_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image9_desk.jpg    1x,
+                      ./img/home-page/restaurant/image9_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image9_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image9_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image9_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image9_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image9_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image9_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image9_mob.jpg    1x,
+                      ./img/home-page/restaurant/image9_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image9_mob.jpg"
+                    alt="A woman is enjoying a meal"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image5_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image5_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image5_desk.jpg    1x,
+                      ./img/home-page/restaurant/image5_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image5_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image5_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image5_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image5_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image5_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image5_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image5_mob.jpg    1x,
+                      ./img/home-page/restaurant/image5_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image5_mob.jpg"
+                    alt="Rice cutlet with shrimp on top"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image7_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image7_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image7_desk.jpg    1x,
+                      ./img/home-page/restaurant/image7_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image7_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image7_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image7_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image7_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image7_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image7_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image7_mob.jpg    1x,
+                      ./img/home-page/restaurant/image7_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image7_mob.jpg"
+                    alt="A glass of whiskey with ice and olives"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image8_desk.webp    1x,
+                      ./img/home-page/restaurant/webp/image8_desk@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./img/home-page/restaurant/image8_desk.jpg    1x,
+                      ./img/home-page/restaurant/image8_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image8_tabl.webp    1x,
+                      ./img/home-page/restaurant/webp/image8_tabl@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/home-page/restaurant/image8_tabl.jpg    1x,
+                      ./img/home-page/restaurant/image8_tabl@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <!-- Mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/webp/image8_mob.webp    1x,
+                      ./img/home-page/restaurant/webp/image8_mob@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/home-page/restaurant/image8_mob.jpg    1x,
+                      ./img/home-page/restaurant/image8_mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./img/home-page/restaurant/image8_mob.jpg"
+                    alt="Asparagus in sauce with greens"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
             </div>
+
+            <!-- Swiper btns -->
+            <ul class="slider-btns">
+              <li>
+                <button class="slider-btn slider-btn-prev" type="button">
+                  <svg class="slider-icon">
+                    <use href="./img/sprite.svg#chevron-left"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="slider-btn slider-btn-next" type="button">
+                  <svg class="slider-icon">
+                    <use href="./img/sprite.svg#chevron-right"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </div>
 
           <ul class="main-btn-group">
@@ -1132,16 +1131,19 @@
 
       <!-- Hotel -->
       <section class="hotel section">
-        <div class="container">
-          <h2 class="section-title">Hotel</h2>
-          <p class="section-descr">
-            Book your stay with us now and experience the epitome of comfort and
-            luxury at our hotel. We guarantee you'll be thrilled with your
-            decision.
-          </p>
+        <div class="hotel-container container">
+          <div class="text-content">
+            <h2 class="section-title">Hotel</h2>
+            <p class="section-descr">
+              Book your stay with us now and experience the epitome of comfort
+              and luxury at our hotel. We guarantee you'll be thrilled with your
+              decision.
+            </p>
+          </div>
 
+          <!-- Img list >= 768px -->
           <ul class="hotel-img-list">
-            <li>
+            <li class="item">
               <picture>
                 <!-- Desktop screen -->
                 <source
@@ -1177,7 +1179,6 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/hotel/image_tabl.jpg"
                   alt="Two cans of liquid soap and towels"
@@ -1220,7 +1221,6 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/hotel/image2_tabl.jpg"
                   alt="Bathroom"
@@ -1229,7 +1229,7 @@
               </picture>
             </li>
 
-            <li>
+            <li class="item">
               <picture>
                 <!-- Desktop screen -->
                 <source
@@ -1265,7 +1265,6 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/hotel/image4_tabl.jpg"
                   alt="Badroom"
@@ -1274,7 +1273,7 @@
               </picture>
             </li>
 
-            <li>
+            <li class="item">
               <picture>
                 <!-- Desktop screen -->
                 <source
@@ -1310,7 +1309,6 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/hotel/image3_tabl.jpg"
                   alt="Sinks in the bathroom"
@@ -1353,7 +1351,6 @@
                   "
                   type="image/jpg"
                 />
-
                 <img
                   src="./img/home-page/hotel/image1_tabl.jpg"
                   alt="Cream in front of the mirror"
@@ -1363,9 +1360,9 @@
             </li>
           </ul>
 
-          <!-- Slider img < 768px -->
+          <!-- Img swiper < 768px -->
           <div class="hotel-mob-img">
-            <picture>
+            <picture class="main-img">
               <!-- Mobile screen -->
               <source
                 media="(max-width: 767.99px)"
@@ -1383,7 +1380,6 @@
                 "
                 type="image/jpg"
               />
-
               <img
                 src="./img/home-page/hotel/image4_mob.jpg"
                 alt="Badroom"
@@ -1391,111 +1387,121 @@
               />
             </picture>
 
-            <div class="hotel-slider">
-              <picture>
-                <!-- Mobile screen -->
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/webp/image_mob.webp    1x,
-                    ./img/home-page/hotel/webp/image_mob@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/image_mob.jpg    1x,
-                    ./img/home-page/hotel/image_mob@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+            <!-- Slider main container -->
+            <div class="hotel-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <picture>
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/webp/image_mob.webp    1x,
+                        ./img/home-page/hotel/webp/image_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/image_mob.jpg    1x,
+                        ./img/home-page/hotel/image_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/home-page/hotel/image_mob.jpg"
+                      alt="Two cans of liquid soap and towels"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
 
-                <img
-                  src="./img/home-page/hotel/image_mob.jpg"
-                  alt="Two cans of liquid soap and towels"
-                  loading="lazy"
-                />
-              </picture>
+                <div class="swiper-slide">
+                  <picture>
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/webp/image2_mob.webp    1x,
+                        ./img/home-page/hotel/webp/image2_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/image2_mob.jpg    1x,
+                        ./img/home-page/hotel/image2_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/home-page/hotel/image2_mob.jpg"
+                      alt="Bathroom"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
 
-              <picture>
-                <!-- Mobile screen -->
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/webp/image2_mob.webp    1x,
-                    ./img/home-page/hotel/webp/image2_mob@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/image2_mob.jpg    1x,
-                    ./img/home-page/hotel/image2_mob@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
+                <div class="swiper-slide">
+                  <picture>
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/webp/image3_mob.webp    1x,
+                        ./img/home-page/hotel/webp/image3_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/image3_mob.jpg    1x,
+                        ./img/home-page/hotel/image3_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/home-page/hotel/image3_mob.jpg"
+                      alt="Sinks in the bathroom"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
 
-                <img
-                  src="./img/home-page/hotel/image2_mob.jpg"
-                  alt="Bathroom"
-                  loading="lazy"
-                />
-              </picture>
+                <div class="swiper-slide">
+                  <picture>
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/webp/image1_mob.webp    1x,
+                        ./img/home-page/hotel/webp/image1_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767.99px)"
+                      srcset="
+                        ./img/home-page/hotel/image1_mob.jpg    1x,
+                        ./img/home-page/hotel/image1_mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./img/home-page/hotel/image1_mob.jpg"
+                      alt="Cream in front of the mirror"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
 
-              <picture>
-                <!-- Mobile screen -->
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/webp/image3_mob.webp    1x,
-                    ./img/home-page/hotel/webp/image3_mob@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/image3_mob.jpg    1x,
-                    ./img/home-page/hotel/image3_mob@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-
-                <img
-                  src="./img/home-page/hotel/image3_mob.jpg"
-                  alt="Sinks in the bathroom"
-                  loading="lazy"
-                />
-              </picture>
-
-              <picture>
-                <!-- Mobile screen -->
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/webp/image1_mob.webp    1x,
-                    ./img/home-page/hotel/webp/image1_mob@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(max-width: 767.99px)"
-                  srcset="
-                    ./img/home-page/hotel/image1_mob.jpg    1x,
-                    ./img/home-page/hotel/image1_mob@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-
-                <img
-                  src="./img/home-page/hotel/image1_mob.jpg"
-                  alt="Cream in front of the mirror"
-                  loading="lazy"
-                />
-              </picture>
-
+              <!-- Swiper btns -->
               <ul class="slider-btns">
                 <li>
                   <button class="slider-btn slider-btn-prev" type="button">
@@ -1791,14 +1797,23 @@
       </div>
     </div>
 
-    <script src="./js/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/swiperInit.js"></script>
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="./js/datepicker.js"></script>
-    <script src="https://unpkg.com/imask"></script>
-    <script src="./js/telMask.js"></script>
-    <script src="./js/priceChange.js"></script>
+    <script type="module" src="./js/header.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script type="module" src="./js/swiperInit.js"></script>
+    <script
+      type="module"
+      src="http://code.jquery.com/jquery-1.7.2.min.js"
+    ></script>
+    <script
+      type="module"
+      src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"
+    ></script>
+    <script type="module" src="./js/datepicker.js"></script>
+    <script type="module" src="https://unpkg.com/imask"></script>
+    <script type="module" src="./js/telMask.js"></script>
+    <script type="module" src="./js/priceChange.js"></script>
   </body>
 </html>
