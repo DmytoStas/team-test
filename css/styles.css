@@ -94,6 +94,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Container */
 .container {
   margin-left: auto;
@@ -1227,5 +1231,152 @@ button {
     position: absolute;
     top: 0;
     right: 32px;
+  }
+}
+
+/**
+  |============================
+  | Location
+  |============================
+*/
+.img-mob-tabl,
+.img-desk-only {
+  position: relative;
+}
+
+.img-mob-tabl img,
+.img-desk-only img {
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+
+.map-pointer {
+  position: absolute;
+  top: 48.4%;
+  left: 36.9%;
+
+  width: 20px;
+  height: 28px;
+}
+@media screen and (min-width: 375px) {
+  .map-pointer {
+    top: 183px;
+    left: 122px;
+
+    width: 27px;
+    height: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .map-pointer {
+    top: 269px;
+    left: 318px;
+
+    width: 34px;
+    height: 42px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .map-pointer {
+    top: 241px;
+    left: 286px;
+  }
+}
+
+.location-address .item {
+  max-width: 214px;
+}
+
+.address-link {
+  color: var(--second-dark-txt-cl);
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+
+.tel {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.tel > span {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  font-weight: 500;
+}
+
+.tel-block {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .address-list .item:first-child {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .location .section-title {
+    margin-bottom: 40px;
+  }
+
+  .address-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tel-link {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .tel-block {
+    gap: 2px;
+  }
+}
+
+@media screen and (max-width: 1439.98px) {
+  .location .img-desk-only {
+    display: none;
+  }
+
+  .img-mob-tabl {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .img-mob-tabl {
+    display: none;
+  }
+
+  .location-container {
+    display: flex;
+    gap: 32px;
+  }
+
+  .location-content {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .location .section-title {
+    margin-bottom: auto;
+  }
+
+  .address-list {
+    gap: 70px;
+  }
+
+  .tel {
+    display: flex;
+    gap: 12px;
+  }
+
+  .tel > span {
+    font-weight: 700;
   }
 }
