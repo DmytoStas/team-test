@@ -1,4 +1,13 @@
 $(function () {
+  $('#book-date').datepicker({
+    dateFormat: 'dd/mm/yy',
+    constainInput: true,
+    minDate: 0,
+    maxDate: '+2M',
+  });
+});
+
+$(function () {
   $('#check-date').datepicker({
     dateFormat: 'dd/mm/yy',
     constainInput: true,

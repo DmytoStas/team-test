@@ -1,6 +1,6 @@
 function onChange() {
-  selectElement = document.getElementById('nightsSelect');
-  numbOfNights = Number(selectElement.value);
+  let selectElement = document.querySelector('nightsSelect');
+  let numbOfNights = Number(selectElement.value);
 
   console.log(numbOfNights);
   let cost = 1000;

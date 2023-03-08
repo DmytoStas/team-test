@@ -1,6 +1,6 @@
 const swiperRest = new Swiper('.restaurant-swiper', {
-  uniqueNavElements: true,
   setWrapperSize: true,
+  uniqueNavElements: true,
   speed: 300,
   spaceBetween: 20,
   slidesPerView: 2,
@@ -21,7 +21,7 @@ const swiperRest = new Swiper('.restaurant-swiper', {
   },
 });
 
-const swiper = new Swiper('.hotel-swiper', {
+const swiperHotelMainPg = new Swiper('.hotel-swiper', {
   uniqueNavElements: true,
   setWrapperSize: true,
   speed: 300,
